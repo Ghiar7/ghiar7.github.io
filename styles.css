@@ -195,3 +195,108 @@ footer {
 .hidden {
     display: none;
 }
+
+/* Responsive Styles */
+
+/* Header and Navigation */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+}
+
+/* Hero Section */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+}
+
+/* About Section */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
+/* Project Section */
+@media (max-width: 768px) {
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        width: 90%;
+    }
+
+    .project-item img {
+        width: 80%;
+    }
+}
+
+/* Skills Section */
+@media (max-width: 768px) {
+    .skills-list li {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Contact Form */
+@media (max-width: 768px) {
+    #contact form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 14px;
+    }
+}
+
+header {
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #444;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hide-navbar {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
