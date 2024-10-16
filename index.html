@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <nav>
             <ul>
@@ -107,7 +108,25 @@
         <p id="formMessage" class="hidden"></p>
     </section>
 
-
     <script src="script.js"></script>
+    <script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('header');
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Jika pengguna menggulir ke bawah, sembunyikan navbar
+        if (scrollTop > lastScrollTop) {
+            navbar.classList.add('hide-navbar');
+        } else {
+            // Jika pengguna menggulir ke atas, tampilkan navbar
+            navbar.classList.remove('hide-navbar');
+        }
+
+        // Update posisi scroll terakhir
+        lastScrollTop = scrollTop;
+    });
+</script>
 </body>
 </html>
