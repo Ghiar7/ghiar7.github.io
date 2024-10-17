@@ -255,6 +255,14 @@ footer {
     }
 }
 
+/* Contact Form */
+@media (max-width: 768px) {
+    #contact-info {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 768px) {
     footer {
         font-size: 14px;
@@ -281,55 +289,70 @@ html {
 
 /* Contact Information Section */
 #contact-info {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
+    background-color: #f7f7f7;
+    padding: 50px 20px;
     text-align: center;
 }
 
 #contact-info h2 {
     font-size: 28px;
     margin-bottom: 20px;
+    color: #333;
 }
 
 #contact-info p {
     font-size: 18px;
+    color: #555;
     margin-bottom: 30px;
 }
 
 .social-list {
     list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
 }
 
 .social-list li {
-    display: inline-block;
+    margin: 10px 0;
 }
 
 .social-list li a {
-    color: #333;
-    font-size: 20px;
     text-decoration: none;
+    font-size: 18px;
+    color: #555;
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
     transition: color 0.3s ease;
 }
 
-.social-list li a i {
-    font-size: 24px;
-    transition: transform 0.3s ease;
-}
-
 .social-list li a:hover {
-    color: #f39c12;
+    color: #0077b5; /* Warna hover untuk ikon */
 }
 
-.social-list li a:hover i {
-    transform: scale(1.2);
+.social-list li a i {
+    margin-right: 10px;
+    font-size: 20px;
 }
+
+@media (max-width: 600px) {
+    /* Styling for screens smaller than 600px */
+    #contact-info h2 {
+        font-size: 24px;
+    }
+
+    #contact-info p {
+        font-size: 16px;
+    }
+
+    .social-list li a {
+        font-size: 16px;
+    }
+
+    .social-list li a i {
+        font-size: 18px;
+    }
+}
+
 
 
 /* Achievement Section */
