@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -13,7 +14,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Achievements</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -24,10 +25,12 @@
     <section id="home">
         <div class="hero-content">
             <h1>Hello, I'm <span class="highlight">Ghiar Ghoniyyu</span></h1>
+            <p>NRP: 5026221064</p>
             <p>Institut Teknologi Sepuluh Nopember</p>
-            <p>083146039877 | ghiaratha@gmail.com | linkedin.com/ghiar-ghoniyyu</p>
         </div>
     </section>
+
+    <!-- <p>083146039877 | ghiaratha@gmail.com | linkedin.com/ghiar-ghoniyyu</p> -->
 
     <!-- About Section -->
     <section id="about" class="section">
@@ -42,37 +45,38 @@
         </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section id="projects" class="section">
-        <h2>Achievement</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <img src="images/achievement.png" style="width: 150px;">
+    <!-- Achievement Section -->
+    <section id="achievements" class="section">
+        <h2>Achievements</h2>
+        <div class="achievement-grid">
+            <div class="achievement-item">
+                <i class="fas fa-trophy"></i>
                 <h3>International Robotics Competition (2019)</h3>
                 <p>Juara 1 International Robotics Competition Kategori Line Maze</p>
             </div>
-            <div class="project-item">
-                <img src="images/achievement.png" style="width: 150px;">
+            <div class="achievement-item">
+                <i class="fas fa-trophy"></i>
                 <h3>International Robotics Competition (2020)</h3>
                 <p>Juara 2 International Robotics Competition Kategori Senior Drone Racing</p>
             </div>
-            <div class="project-item">
-                <img src="images/achievement.png" style="width: 150px;">
+            <div class="achievement-item">
+                <i class="fas fa-trophy"></i>
                 <h3>International Robotics Competition (2020)</h3>
                 <p>Juara 2 International Robotics Competition Kategori Senior Underwater</p>
             </div>
-            <div class="project-item">
-                <img src="images/achievement.png" style="width: 150px;">
+            <div class="achievement-item">
+                <i class="fas fa-trophy"></i>
                 <h3>Robotics National (2021)</h3>
                 <p>Juara 3 Robotics National Kategori Transporter</p>
             </div>
-            <div class="project-item">
-                <img src="images/achievement.png" style="width: 150px;">
+            <div class="achievement-item">
+                <i class="fas fa-trophy"></i>
                 <h3>Robotics National (2021)</h3>
                 <p>Juara 3 Robotics National Kategori Senior Drone Racing</p>
             </div>
         </div>
     </section>
+
 
     <!-- Skills Section -->
     <section id="skills" class="section">
@@ -87,11 +91,15 @@
         </ul>
     </section>
 
+    
+
+
     <!-- Contact Section -->
     <section id="contact" class="section">
         <h2>Contact Me</h2>
         <form id="contactForm">
             <div class="form-group">
+
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
             </div>
@@ -107,6 +115,21 @@
         </form>
         <p id="formMessage" class="hidden"></p>
     </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact-info" class="section">
+        <h2>Get In Touch</h2>
+        <p>You can reach me through these platforms:</p>
+        <ul class="social-list">
+            <li><a href="083146039877" target="_blank"><i class="fas fa-phone"></i> 083146039877</a></li>
+            <li><a href="mailto:ghiaratha@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a></li>
+            <li><a href="https://linkedin.com/in/ghiar-ghoniyyu" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/ghiar7" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+        </ul>
+    </section>
+
+
+
 
     <script src="script.js"></script>
     <script>
